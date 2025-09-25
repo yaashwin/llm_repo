@@ -1,0 +1,248 @@
+Source Type: Video File
+Transcription Date: 2025-09-22 15:19:19
+==================================================
+
+[00:00 - 00:06] There has been a lot of high-paround model context protocol and I am going to make an attempt to provide
+
+[00:06 - 00:12] an extremely simple explanation of MCP today. I will also go into technical details so that
+
+[00:12 - 00:18] if you are building an AI application it helps you. If you think about
+
+[00:18 - 00:25] ease of building AI applications, we are seeing a clear evolution. First we started with LLM
+
+[00:25 - 00:30] without any tools etc. Then we started building this agentic frameworks etc where
+
+[00:31 - 00:39] LLM gets help from tools and knowledge. Now we are entering the realm of standardized ways of
+
+[00:39 - 00:45] interacting with these tools and knowledge so that building AI applications becomes easier.
+
+[00:45 - 00:50] Let me give you an example. Say you are a equity research analyst working at some company,
+
+[00:50 - 00:57] let's say Jeffries. You want to develop a report comparing Nvidia and Tesla's talk that looks
+
+[00:57 - 01:01] something like this where you have company description at the beginning then you have some
+
+[01:02 - 01:08] financial metrics then you have a summary of those metrics and in the end you have recent news
+
+[01:08 - 01:14] about those companies. Now you are a tech-series person so you will talk to your AI engineer friend
+
+[01:14 - 01:23] working at Jeffries and you will ask him to build an AI application that can automatically generate
+
+[01:23 - 01:32] this report. Now your AI engineer friend understands the capability of LLM. See they know that LLM
+
+[01:32 - 01:40] can pull the description of Nvidia and Tesla because it is part of that training dataset but
+
+[01:40 - 01:48] it cannot pull the latest talk price for example. Once you have somehow retrieved let's say the
+
+[01:48 - 01:56] latest talk price LLM can summarize that particular information okay. So if you think about pure
+
+[01:56 - 02:03] LLM it has all these capabilities. Now you will ask me okay if I go to chat GPT and if I type
+
+[02:03 - 02:09] this question it is pulling the information but look at this it is searching the web actually.
+
+[02:09 - 02:18] So chat GPT is an agent I am referring to GPT 40 model okay. So now you already know the answer
+
+[02:18 - 02:25] that you can use web search or maybe you can call Yahoo Finance API which is called a tool
+
+[02:26 - 02:33] to retrieve the latest information. To summarize AI engineer will build this application
+
+[02:34 - 02:42] where the heart is LLM and LLM is interacting with some tools which can be Yahoo Finance API or
+
+[02:42 - 02:48] web search it is also interacting with some knowledge. You might have some private database in
+
+[02:48 - 02:57] Jeffries some PDF files LLM might want to pull data from it and he will write all this glue
+
+[02:57 - 03:02] code okay glue code is basically the code that you are writing for these interactions. Now this
+
+[03:02 - 03:08] can be an agent application in which glue code is written by the agent framework such as
+
+[03:08 - 03:16] crew AI, agno etc or it can be a workflow application where as part of your Python code you are
+
+[03:16 - 03:22] writing all this glue code. This is just one application imagine Jeffries is building 20 such
+
+[03:22 - 03:29] application and think about all the companies in the world building millions of applications
+
+[03:30 - 03:36] that is a lot of glue code it sounds like you have this old computer and you're connecting
+
+[03:36 - 03:44] with keyboard mouse etc through all these different wires but you will be like no today things have
+
+[03:44 - 03:50] changed today you can connect computer using this unified interface USB C port you can have
+
+[03:50 - 03:57] your USB hub and you can connect all these devices well that USB C moment has arrived
+
+[03:58 - 04:08] for AI and that is your model context protocol in this your LLM will interact through model
+
+[04:08 - 04:16] context protocol with different MCP servers so for our Jeffries example think that Yahoo Finance
+
+[04:17 - 04:24] is building an MCP server or let's say Google search is building another MCP server where they are
+
+[04:24 - 04:33] exposing all these tools and resources and prompts etc and that way these interactions become
+
+[04:33 - 04:39] easier now you're a smart programmer and you'll be like hey we are still writing glue code right
+
+[04:39 - 04:47] because you need to do all these interactions the answer is yes you're writing some glue code here
+
+[04:47 - 04:56] but the ease of writing that code is increasing going back to our old diagram the problem here was
+
+[04:56 - 05:02] not just writing the code but maintaining it because tomorrow if Yahoo Finance changes their API
+
+[05:02 - 05:07] you have to maintain this code right so all this glue code becomes a nightmare to maintain
+
+[05:08 - 05:17] whereas with this MCP due to the standard protocol writing and maintaining the code has become easier
+
+[05:17 - 05:25] and also since writing this code is centralized let's say Yahoo Finance folks will write their MCP
+
+[05:25 - 05:30] server so now all these 10,000 programmers in the world they don't have to write the code okay so
+
+[05:30 - 05:36] they are kind of getting this ready made thing and they are saving time on building their AI
+
+[05:37 - 05:43] let's go deeper into technical details now say you are building this chatbot for your organization
+
+[05:44 - 05:49] which requires interacting with Google Maps API so let's say you're getting some location
+
+[05:49 - 05:56] and you are automatically creating the 2D task using this app to do it and the technical teams at
+
+[05:56 - 06:05] Google Maps and 2D West have already built this MCP servers in MCP client which is your chatbot
+
+[06:05 - 06:12] you will have a configuration which will tell you what kind of servers are available to this client
+
+[06:13 - 06:21] when this chatbot starts at the beginning let's say just think about Google Maps server it will
+
+[06:21 - 06:29] make a call called list tools and this call will be made for Google Maps to do is to all the servers
+
+[06:29 - 06:37] which are listed Google Maps MCP server will return all its capabilities in form of this type of
+
+[06:37 - 06:44] response so here you are saying that I can help you search places and you are providing this
+
+[06:44 - 06:53] detailed description this description is very important because it will guide LLM to call an
+
+[06:53 - 07:01] appropriate tool LLM has language intelligence so just by reading this description it can figure out
+
+[07:01 - 07:10] that for whatever query if I have to search places I can use this map search places tool not only that
+
+[07:11 - 07:20] from the query it will also extract the required parameters such as search query latitude longitude
+
+[07:21 - 07:26] let's say you are going for a hiking in Ladakh and you will say I am going from Ladakh to this place
+
+[07:28 - 07:34] you know show me the places so from that natural question it will extract the parameter Ladakh
+
+[07:34 - 07:42] is a location and it will map it to longitude and latitude and it will also determine that it
+
+[07:42 - 07:49] needs to call this function now you will have all the tools you will have map place details and all
+
+[07:49 - 07:56] the functionalities that Google Maps provides not only that you will have the tool description from
+
+[07:56 - 08:05] other servers such as to do is as well so once LLM knows all these details now let's say you are
+
+[08:05 - 08:12] asking this question that I am going for hiking in Ladakh and I need this place details what
+
+[08:12 - 08:20] this application my chatbot will do is it will use this kind of a prompt so in this prompt this tool
+
+[08:20 - 08:27] description is nothing but the combined tool description of all the tools you have available okay
+
+[08:28 - 08:34] and it will say that choose the appropriate tool based on the user question so when you have
+
+[08:34 - 08:41] tool description and this kind of nice prompt LLM is smart enough to figure out which tool to call
+
+[08:41 - 08:48] which parameter to extract from the user question and how to make a call get the response and how to
+
+[08:48 - 08:57] read the response and serve to the end user here I have this MCP client from the python SDK that
+
+[08:57 - 09:06] anthropic has provided when it starts it will go through all the servers remember that server configuration
+
+[09:06 - 09:13] it will go through all the servers and each server it will ask list tools and whatever tools it is
+
+[09:13 - 09:21] getting it will get the description of all those tools and it will put it here and look at this prompt
+
+[09:21 - 09:29] okay so now you understand that LLM is getting question how it maps or how it figure out an
+
+[09:29 - 09:37] appropriate tool to call now let me show you the MCP server from Google maps here it is listing
+
+[09:37 - 09:44] the tools so when MCP client makes that request it will handle that request and it will list all
+
+[09:44 - 09:51] the tools so you see this call okay and what are the tools so let's search for all the tools okay
+
+[09:51 - 10:00] so search places tool you see search places tool Geocode tool okay so search places tool should be
+
+[10:00 - 10:05] here so eventually it will come to this python function oh this is not python actually this is
+
+[10:05 - 10:13] TypeScript so you can implement your server in either TypeScript or python and here from the user
+
+[10:13 - 10:21] question it will derive the query location etc and it will actually make an HTTP call to the
+
+[10:21 - 10:29] Google map API so it's not like you are replacing a wrist protocol here or HTTP it's like a rapper
+
+[10:30 - 10:38] and you are internally calling Google map API and you are returning the response in a standardized
+
+[10:38 - 10:46] format okay so there is a standard here so if you look at the input schema okay so let me search for
+
+[10:46 - 10:58] input schema see input schema you see so for the search places tool you see here there is a standard
+
+[10:58 - 11:06] way you will provide the description of the tool and also the query parameter etc so see this
+
+[11:06 - 11:12] input schema description etc is part of this particular standard so you can find the schema I'm
+
+[11:12 - 11:19] going to provide all the links okay so this is the standard this is the schema that anybody who
+
+[11:19 - 11:27] is building an MCP server will have to add her to so that way we have standard and some uniform or
+
+[11:27 - 11:33] predictable way of communication okay so you look at this TypeScript schema where you say input
+
+[11:34 - 11:40] schema is this type required whatever just go through this schema and you will get an idea any MCP
+
+[11:40 - 11:47] server will expose three capabilities tool resource and prompt their python acity has simple
+
+[11:47 - 11:53] examples for each of them so let's look at the tool this is a simple server with one single tool
+
+[11:53 - 12:02] okay so if you look at the least tools functions see list tools here it is exposing see this is an array
+
+[12:02 - 12:09] okay so it is exposing a single tool called Fetch and there is this standard description standard
+
+[12:09 - 12:17] input schema and so on if you look at the implementation of Fetch it looks like this okay so you are
+
+[12:17 - 12:26] fetching a website okay so here see you are fetching a website so whenever that Fetch tool is called
+
+[12:26 - 12:34] you call this function and you are just retrieving some information by making an HTTP call okay so
+
+[12:34 - 12:42] this is pretty straightforward the second capability is a resource resources some kind of knowledge
+
+[12:42 - 12:50] okay data ways files etc and similar to list tool functions it will have list resources so when
+
+[12:50 - 12:58] the MCP client starts it will call list tools list resources list prompts for each of the servers
+
+[12:58 - 13:05] so it knows the full capabilities of all the servers that it has available or has access to so in
+
+[13:05 - 13:13] the list resources you can have a file see is a plain file very simple example you can have a file
+
+[13:13 - 13:22] in your some drive or some you know like Amazon S3 etc you can also have a prompt so just imagine
+
+[13:22 - 13:29] you are building MCP server for Yahoo Finance as a developer you know all the prompts that AI
+
+[13:29 - 13:38] engineers might need to interact with my API okay so you will provide all those prompts via your
+
+[13:38 - 13:47] server so writing prompts become very easy for the MCP client okay so here you are providing one
+
+[13:47 - 13:53] single prompt so once again you have list prompts you are providing all the prompts see this is an array
+
+[13:53 - 14:00] and this is the simple prompt that takes context and topic and if you look at the implementation it's
+
+[14:00 - 14:08] pretty simple you have context you have topic and you are creating the prompt using that context
+
+[14:08 - 14:15] and topic folks that's it so that is what is model context protocol I'm going to provide documentation
+
+[14:15 - 14:22] etc so you can read through more details there has been a lot of hype but I believe we are in
+
+[14:22 - 14:29] early days this has a lot of potential but how this is going to evolve and how this is going to
+
+[14:29 - 14:35] help AI engineers solve the real problems is something that we will know as time goes okay so some
+
+[14:35 - 14:41] people are super excited well I'm excited too but just understand that we are in early days there
+
+[14:41 - 14:48] has been a lot of hype there is some reality we'll have to see how this thing evolves we are going
+
+[14:48 - 14:56] to come up with few more technical tutorials on this so I'll be building some actual servers and
+
+[14:56 - 15:02] clients using mcp if you have any question please post in the comment box below thank you for
+
+[15:02 - 15:05] watching
+

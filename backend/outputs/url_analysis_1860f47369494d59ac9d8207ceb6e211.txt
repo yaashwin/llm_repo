@@ -1,0 +1,13 @@
+URL Analysis Summary
+URL: https://modelcontextprotocol.io/docs/getting-started/intro
+Title: What is the Model Context Protocol (MCP)? - Model Context Protocol
+Analysis Date: 2025-09-17 14:41:31
+==================================================
+
+Summary:
+Title: What is the Model Context Protocol (MCP)? - Model Context Protocol
+
+Content Preview:
+MCP (Model Context Protocol) is an open-source standard for connecting AI applications to external systems.
+Using MCP, AI applications like Claude or ChatGPT can connect to data sources (e.g. local files, databases), tools (e.g. search engines, calculators) and workflows (e.g. specialized prompts)—enabling them to access key information and perform tasks.
+Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect electronic devices, MCP provides a st...

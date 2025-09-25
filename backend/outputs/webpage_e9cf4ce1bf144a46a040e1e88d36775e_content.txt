@@ -1,0 +1,72 @@
+Source Type: Web URL
+URL: https://en.wikipedia.org/wiki/Biohybrid_system
+Title: Biohybrid system - Wikipedia
+Extraction Date: 2025-09-11 14:59:37
+==================================================
+
+Toggle the table of contents
+Biohybrid system
+Add languages
+Add links
+Article
+Talk
+English
+Read
+Edit
+View history
+Tools
+Tools
+move to sidebar
+hide
+Actions
+Read
+Edit
+View history
+General
+What links here
+Related changes
+Upload file
+Permanent link
+Page information
+Cite this page
+Get shortened URL
+Download QR code
+Print/export
+Download as PDF
+Printable version
+In other projects
+Wikidata item
+Appearance
+move to sidebar
+hide
+From Wikipedia, the free encyclopedia
+Biohybrid systems
+refer to the integration of biological materials, such as cells or tissues, with artificial components, including
+electronics
+or
+mechanical structure
+. This combination uses the capabilities of living organisms alongside the precision of man-made technology, enabling the performance of tasks that neither biology nor machines could achieve independently.
+Biohybrid systems might utilize lab-cultured muscle cells to power small robots or combine sensors with living tissue for better health sensing. The intent behind these systems is to bring together the benefits of biological and technological components in order to introduce new solutions for complex medical challenges.
+[
+1
+]
+Biohybrid systems have transformative potential across multiple sectors such as
+robotics
+to create actuators and sensors that mimic natural muscle and nerve function,
+medicine
+in developing smart implants and drug delivery systems, in
+prosthetics
+for enhancing user control through neural or muscular interfaces and
+environmental sustainability
+for deploying biohybrid solutions for pollution sensing or remediation.
+[
+2
+]
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Biohybrid_system&oldid=1306532629
+"
+Category
+:
+Biotechnology
+Hidden category:
+CS1 maint: article number as page number

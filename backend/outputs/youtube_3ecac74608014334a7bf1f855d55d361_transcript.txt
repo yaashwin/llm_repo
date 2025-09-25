@@ -1,0 +1,980 @@
+Source Type: YouTube Video
+Transcription Date: 2025-09-15 15:33:21
+==================================================
+
+[00:00 - 00:03] Hi and Hello guys!
+
+[00:03 - 00:09] In our channel, we are going to learn a basic language based on the language of the machine learning.
+
+[00:09 - 00:14] Now, this concept of the machine is like a movie story.
+
+[00:14 - 00:19] Now, we are going to a movie story completely completed.
+
+[00:19 - 00:22] We are going to understand the story completely.
+
+[00:22 - 00:25] Now, we are going to shoot the movie.
+
+[00:26 - 00:31] So, movie rating is like the concept of the machine learning.
+
+[00:31 - 00:34] Like the concept of the machine learning.
+
+[00:34 - 00:36] We are going to shoot the movie.
+
+[00:36 - 00:39] Like the concept of the machine learning.
+
+[00:39 - 00:41] We are going to shoot the movie.
+
+[00:41 - 00:44] So, without getting late, let's get into the video today.
+
+[00:44 - 00:48] I am Tharoon, and this is your channel, Tech Explore.
+
+[00:49 - 00:57] So, this is our basic language based on the language of the machine learning.
+
+[00:57 - 01:00] What is the language of the machine learning?
+
+[01:00 - 01:05] Pandas, Nampai, SKL and Matplotlib.
+
+[01:05 - 01:09] So, if you ask me to come to the library, I am not asking you to come to the library.
+
+[01:09 - 01:13] We are going to make some code and implement something.
+
+[01:13 - 01:15] We can make some code and implement something.
+
+[01:16 - 01:19] That would be all we need to tbsp and stop the data from coming to your manuals.
+
+[01:19 - 01:21] I have not even met Scrooge earlier.
+
+[01:21 - 01:24] Now, I will start trying to make a video for you.
+
+[01:24 - 01:27] St보다 is first someone.
+
+[01:27 - 01:30] Now that I finish, let's try to adjust for the first minute.
+
+[01:30 - 01:33] But now, I am how to start.
+
+[01:33 - 01:34] Thank you very much!
+
+[01:34 - 01:37] Here, just take the full input form.
+
+[01:37 - 01:41] They say, just put the output in,
+
+[01:41 - 01:43] so, due to our Panda software,
+
+[01:43 - 01:48] In this data format, the rules and columns are called the element tablet runs.
+
+[01:48 - 01:50] Now, let's see how to do it.
+
+[01:50 - 01:52] Player, minutes, points, etc.
+
+[01:52 - 01:55] We have a full column of data.
+
+[01:55 - 02:00] In the names of the players, the observation attributes are added.
+
+[02:00 - 02:03] We have a table data of each of the forms.
+
+[02:03 - 02:06] We have to deal with the data in the path of the data.
+
+[02:06 - 02:08] We have to use the Pandas tab.
+
+[02:08 - 02:10] The tables are in this table.
+
+[02:10 - 02:12] The data is in the data format.
+
+[02:12 - 02:14] The math and operations are in the form.
+
+[02:14 - 02:16] We have to use it.
+
+[02:16 - 02:18] Now, we have to look at the scale.
+
+[02:18 - 02:21] In the machine, we have already been regression.
+
+[02:21 - 02:25] If we have to code this scale, we can't solve the problem.
+
+[02:25 - 02:29] We have already seen the scale in the machine.
+
+[02:29 - 02:32] We have to use this method.
+
+[02:33 - 02:36] The math plot will be created.
+
+[02:36 - 02:38] I have created a model.
+
+[02:38 - 02:40] I have created a model.
+
+[02:40 - 02:44] The data in this structure is used to visualize the data.
+
+[02:44 - 02:47] We have to use this math plot.
+
+[02:47 - 02:52] This is the basic idea of these four libraries.
+
+[02:52 - 02:59] Now, we have to look at the data and see the scale.
+
+[03:00 - 03:05] If you see, we have two columns.
+
+[03:05 - 03:09] The area of square feet and the price and lakhs.
+
+[03:09 - 03:11] This is the data of the data.
+
+[03:11 - 03:13] The data is in the data.
+
+[03:13 - 03:17] This is the data of square feet.
+
+[03:17 - 03:21] The price and the price of the data is in the data.
+
+[03:21 - 03:23] The data is in the data.
+
+[03:23 - 03:26] This is almost equal to 1.9 crores.
+
+[03:27 - 03:30] That is, 294 square feet.
+
+[03:30 - 03:34] That is around 2 crores and 60 lakhs.
+
+[03:34 - 03:38] This is the area of square feet and the price and lakhs.
+
+[03:38 - 03:40] This is the data we will deal with.
+
+[03:40 - 03:42] What we will do with this data?
+
+[03:42 - 03:46] In the future, I have a price and I have a price.
+
+[03:46 - 03:48] I have a estimate.
+
+[03:48 - 03:50] I will build a model.
+
+[03:50 - 03:52] Using linear regression algorithm.
+
+[03:53 - 03:55] So, could we start coding?
+
+[03:55 - 03:58] Get your hands guys into the coding.
+
+[03:58 - 04:01] So, first, I will be doing a drone.
+
+[04:01 - 04:03] Google, call-up-beam-seater-repsy.
+
+[04:03 - 04:06] This call-up is generally used for research purposes.
+
+[04:06 - 04:08] We will be coding.
+
+[04:08 - 04:10] Most generally, models will be built.
+
+[04:10 - 04:11] We will be building it.
+
+[04:11 - 04:14] So, basically, we will see the basic data.
+
+[04:14 - 04:17] In this call-up, we will see the data in the database.
+
+[04:17 - 04:19] We will see the data in the database.
+
+[04:19 - 04:21] This is the cloud.
+
+[04:21 - 04:23] This is the cloud.
+
+[04:23 - 04:25] This is the cloud.
+
+[04:25 - 04:27] We will be training our training.
+
+[04:27 - 04:29] We will be training our training.
+
+[04:29 - 04:31] So, what is the GPU?
+
+[04:31 - 04:33] We will be selecting it.
+
+[04:33 - 04:35] We will be selecting it.
+
+[04:35 - 04:37] We will be using it.
+
+[04:37 - 04:39] But then, the 4 GPUs are free for us now.
+
+[04:39 - 04:43] So, first, we will use the library.
+
+[04:43 - 04:45] First, import.
+
+[04:45 - 04:47] What we will do?
+
+[04:47 - 04:53] So, import pandas as pd, and then import.
+
+[04:53 - 04:56] Sql-ernas.
+
+[04:56 - 04:59] Sql-read-read-chikla.
+
+[04:59 - 05:01] And then import.
+
+[05:01 - 05:09] Let's say, matplotlib.pyplot.plt.
+
+[05:09 - 05:11] Okay, wow.
+
+[05:11 - 05:13] We will be doing this.
+
+[05:13 - 05:15] We will be doing this in the cellar.
+
+[05:15 - 05:17] We will be doing this.
+
+[05:17 - 05:19] We will be doing this.
+
+[05:19 - 05:21] Okay, okay.
+
+[05:21 - 05:23] Now, we will import the library.
+
+[05:23 - 05:25] But, we will be doing this in the database.
+
+[05:25 - 05:27] We will be doing this in the database.
+
+[05:27 - 05:29] We will be doing this in the database.
+
+[05:29 - 05:31] We will be doing this in the database.
+
+[05:31 - 05:33] We will be doing this in the database.
+
+[05:33 - 05:35] We will be doing this in the database.
+
+[05:35 - 05:37] We will be doing this in the database.
+
+[05:37 - 05:39] We will be doing this in the database.
+
+[05:39 - 05:41] We will be doing this in the database.
+
+[05:41 - 05:43] We will be doing this in the database.
+
+[05:43 - 05:45] When we figure out how to keep this code record.
+
+[05:45 - 05:49] When we figure out how to keep this code record.
+
+[05:49 - 05:51] When we measure that data we have already completed.
+
+[05:51 - 05:53] When we measure that data we have already completed.
+
+[05:53 - 05:55] When we measure that data we have finished and cleanup first.
+
+[05:55 - 05:57] When we measure that data we have finished and cleaning alpha.
+
+[05:57 - 06:01] When we measure that data we have finished and cleaning alpha.
+
+[06:01 - 06:03] When we measure that data we have finished and cleaning alpha.
+
+[06:03 - 06:05] Or in writing language, we have written description.
+
+[06:05 - 06:07] While we set foot notes to go to this basement.
+
+[06:07 - 06:09] After we set foot notes to reach the basement.
+
+[06:09 - 06:11] When we set foot notes to reach the basement.
+
+[06:11 - 06:12] Number 1, number 1, number 1, number 1, n number 5.
+
+[06:12 - 06:18] of course, we will do a table data deal, we will do a Pada's level use.
+
+[06:18 - 06:22] So, I will do a table data, let's say data pre DFO's later,
+
+[06:22 - 06:27] let's say, we will do a Pd in our name, we will do a Pada's input.
+
+[06:27 - 06:32] Now, Pd. This is a format, CsV format.
+
+[06:32 - 06:35] So, Pd.read CsV.
+
+[06:35 - 06:42] Pd.read CsV.
+
+[06:42 - 06:52] File name is house, prediction, data set, dot CsV.
+
+[06:52 - 06:58] Now, we have the data pre DFO's input, we will do a table data deal,
+
+[06:58 - 07:00] we will do a table data deal, we will do a table data deal,
+
+[07:00 - 07:03] we will do a table data deal, we will do a table data deal,
+
+[07:03 - 07:05] we will do a table data deal, we will do a table data deal,
+
+[07:05 - 07:07] we will do a table data deal, we will do a table data deal,
+
+[07:07 - 07:09] we will do a table data deal, we will do a table data deal,
+
+[07:09 - 07:11] we will do a table data deal, we will do a table data deal,
+
+[07:11 - 07:13] we will do a table data deal, we will do a table data deal,
+
+[07:13 - 07:15] we will do a table data deal, we will do a table data deal,
+
+[07:15 - 07:17] we will do a table data deal, we will do a table data deal,
+
+[07:17 - 07:19] we will do a table data deal, we will do a table data deal,
+
+[07:19 - 07:21] we will do a table data deal, we will do a table data deal,
+
+[07:21 - 07:22] we will do a table data deal, we will do a table data deal,
+
+[07:22 - 07:23] we will do a table data deal, we will do a table data deal,
+
+[07:23 - 07:24] we will do a table data deal, we will do a table data deal,
+
+[07:24 - 07:26] we will do a table data deal, we will do a table data deal,
+
+[07:26 - 07:28] we will do a table data deal, we will do a table data deal,
+
+[07:28 - 07:30] we will do a table data deal, we will do a table data deal,
+
+[07:30 - 07:32] we will do a table data deal, we will do a table data deal,
+
+[07:32 - 07:34] we will do a table data deal, we will do a table data deal,
+
+[07:34 - 07:36] we will do a table data deal, we will do a table data deal,
+
+[07:36 - 07:38] we will do a table data deal, we will do a table data deal,
+
+[07:38 - 07:40] we will do a table data deal, we will do a table data deal,
+
+[07:40 - 07:42] we will do a table data deal, we will do a table data deal,
+
+[07:42 - 07:44] we will do a table data deal, we will do a table data deal,
+
+[07:44 - 07:46] we will do a table data deal, we will do a table data deal,
+
+[07:46 - 07:48] we will do a table data deal, we will do a table data deal,
+
+[07:48 - 07:50] we will do a table data deal, we will do a table data deal,
+
+[07:50 - 07:52] we will do a table data deal, we will do a table data deal,
+
+[07:52 - 07:54] we will do a table data deal, we will do a table data deal,
+
+[07:54 - 07:56] we will do a table data deal, we will do a table data deal,
+
+[07:56 - 07:58] we will do a table data deal, we will do a table data deal,
+
+[07:58 - 08:00] we will do a table data deal, we will do a table data deal,
+
+[08:00 - 08:02] we will do a table data deal, we will do a table data deal,
+
+[08:02 - 08:04] we will do a table data deal, we will do a table data deal,
+
+[08:04 - 08:06] we will do a table data deal, we will do a table data deal,
+
+[08:06 - 08:08] we will do a table data deal, we will do a table data deal,
+
+[08:08 - 08:10] we will do a table data deal, we will do a table data deal,
+
+[08:10 - 08:12] we will do a table data deal, we will do a table data deal,
+
+[08:12 - 08:14] we will do a table data deal, we will do a table data deal,
+
+[08:14 - 08:16] we will do a table data deal, we will do a table data deal,
+
+[08:16 - 08:18] we will do a table data deal, we will do a table data deal,
+
+[08:18 - 08:20] we will do a table data deal, we will do a table data deal,
+
+[08:20 - 08:22] we will do a table data deal, we will do a table data deal,
+
+[08:22 - 08:24] we will do a table data deal, we will do a table data deal,
+
+[08:24 - 08:26] we will do a table data deal, we will do a table data deal,
+
+[08:26 - 08:28] we will do a table data deal, we will do a table data deal,
+
+[08:28 - 08:30] we will do a table data deal, we will do a table data deal,
+
+[08:30 - 08:32] we will do a table data deal, we will do a table data deal,
+
+[08:32 - 08:34] we will do a table data deal, we will do a table data deal,
+
+[08:34 - 08:36] we will do a table data deal, we will do a table data deal,
+
+[08:36 - 08:38] we will do a table data deal, we will do a table data deal,
+
+[08:38 - 08:40] we will do a table data deal, we will do a table data deal,
+
+[08:40 - 08:42] we will do a table data deal, we will do a table data deal,
+
+[08:42 - 08:44] we will do a table data deal, we will do a table data deal,
+
+[08:44 - 08:46] we will do a table data deal, we will do a table data deal,
+
+[08:46 - 08:48] we will do a table data deal, we will do a table data deal,
+
+[08:48 - 08:50] we will do a table data deal, we will do a table data deal,
+
+[08:50 - 08:52] we will do a table data deal, we will do a table data deal,
+
+[08:52 - 08:54] we will do a table data deal, we will do a table data deal,
+
+[08:54 - 08:56] we will do a table data deal, we will do a table data deal,
+
+[08:56 - 08:58] we will do a table data deal, we will do a table data deal,
+
+[08:58 - 09:00] we will do a table data deal, we will do a table data deal,
+
+[09:00 - 09:02] we will do a table data deal, we will do a table data deal,
+
+[09:02 - 09:04] we will do a table data deal, we will do a table data deal,
+
+[09:04 - 09:06] we will do a table data deal, we will do a table data deal,
+
+[09:06 - 09:08] we will do a table data deal, we will do a table data deal,
+
+[09:08 - 09:10] we will do a table data deal, we will do a table data deal,
+
+[09:10 - 09:12] we will do a table data deal, we will do a table data deal,
+
+[09:12 - 09:14] we will do a table data deal, we will do a table data deal,
+
+[09:14 - 09:16] we will do a table data deal, we will do a table data deal,
+
+[09:16 - 09:18] we will do a table data deal, we will do a table data deal,
+
+[09:18 - 09:20] we will do a table data deal, we will do a table data deal,
+
+[09:20 - 09:22] we will do a table data deal, we will do a table data deal,
+
+[09:22 - 09:24] we will do a table data deal, we will do a table data deal,
+
+[09:24 - 09:26] we will do a table data deal, we will do a table data deal,
+
+[09:26 - 09:28] we will do a table data deal, we will do a table data deal,
+
+[09:28 - 09:30] we will do a table data deal, we will do a table data deal,
+
+[09:30 - 09:32] we will do a table data deal, we will do a table data deal,
+
+[09:32 - 09:34] we will do a table data deal, we will do a table data deal,
+
+[09:34 - 09:36] we will do a table data deal, we will do a table data deal,
+
+[09:36 - 09:38] we will do a table data deal, we will do a table data deal,
+
+[09:38 - 09:40] we will do a table data deal, we will do a table data deal,
+
+[09:40 - 09:42] we will do a table data deal, we will do a table data deal,
+
+[09:42 - 09:44] we will do a table data deal, we will do a table data deal,
+
+[09:44 - 09:46] we will do a table data deal, we will do a table data deal,
+
+[09:46 - 09:48] we will do a table data deal, we will do a table data deal,
+
+[09:48 - 09:50] we will do a table data deal, we will do a table data deal,
+
+[09:50 - 09:52] we will do a table data deal, we will do a table data deal,
+
+[09:52 - 09:54] we will do a table data deal, we will do a table data deal,
+
+[09:54 - 09:56] we will do a table data deal, we will do a table data deal,
+
+[09:56 - 09:58] we will do a table data deal, we will do a table data deal,
+
+[09:58 - 10:00] we will do a table data deal, we will do a table data deal,
+
+[10:00 - 10:02] we will do a table data deal, we will do a table data deal,
+
+[10:02 - 10:04] we will do a table data deal, we will do a table data deal,
+
+[10:04 - 10:06] we will do a table data deal, we will do a table data deal,
+
+[10:06 - 10:08] we will do a table data deal, we will do a table data deal,
+
+[10:08 - 10:10] we will do a table data deal, we will do a table data deal,
+
+[10:10 - 10:12] we will do a table data deal, we will do a table data deal,
+
+[10:12 - 10:14] we will do a table data deal, we will do a table data deal,
+
+[10:14 - 10:16] we will do a table data deal, we will do a table data deal,
+
+[10:16 - 10:18] we will do a table data deal, we will do a table data deal,
+
+[10:18 - 10:20] we will do a table data deal, we will do a table data deal,
+
+[10:20 - 10:22] we will do a table data deal, we will do a table data deal,
+
+[10:22 - 10:24] we will do a table data deal, we will do a table data deal,
+
+[10:24 - 10:26] we will do a table data deal, we will do a table data deal,
+
+[10:26 - 10:28] we will do a table data deal, we will do a table data deal,
+
+[10:28 - 10:30] we will do a table data deal, we will do a table data deal,
+
+[10:30 - 10:32] we will do a table data deal, we will do a table data deal,
+
+[10:32 - 10:34] we will do a table data deal, we will do a table data deal,
+
+[10:34 - 10:36] we will do a table data deal, we will do a table data deal,
+
+[10:36 - 10:38] we will do a table data deal, we will do a table data deal,
+
+[10:38 - 10:40] we will do a table data deal, we will do a table data deal,
+
+[10:40 - 10:42] we will do a table data deal, we will do a table data deal,
+
+[10:42 - 10:44] we will do a table data deal, we will do a table data deal,
+
+[10:44 - 10:46] we will do a table data deal, we will do a table data deal,
+
+[10:46 - 10:48] we will do a table data deal, we will do a table data deal,
+
+[10:48 - 10:50] we will do a table data deal, we will do a table data deal,
+
+[10:50 - 10:52] we will do a table data deal, we will do a table data deal,
+
+[10:52 - 10:54] we will do a table data deal, we will do a table data deal,
+
+[10:54 - 10:56] we will do a table data deal, we will do a table data deal,
+
+[10:56 - 10:58] we will do a table data deal, we will do a table data deal,
+
+[10:58 - 11:00] we will do a table data deal, we will do a table data deal,
+
+[11:00 - 11:02] we will do a table data deal, we will do a table data deal,
+
+[11:02 - 11:04] we will do a table data deal, we will do a table data deal,
+
+[11:04 - 11:06] we will do a table data deal, we will do a table data deal,
+
+[11:06 - 11:08] we will do a table data deal, we will do a table data deal,
+
+[11:08 - 11:10] we will do a table data deal, we will do a table data deal,
+
+[11:10 - 11:12] we will do a table data deal, we will do a table data deal,
+
+[11:12 - 11:14] we will do a table data deal, we will do a table data deal,
+
+[11:14 - 11:16] we will do a table data deal, we will do a table data deal,
+
+[11:16 - 11:18] we will do a table data deal, we will do a table data deal,
+
+[11:18 - 11:20] we will do a table data deal, we will do a table data deal,
+
+[11:20 - 11:22] we will do a table data deal, we will do a table data deal,
+
+[11:22 - 11:24] we will do a table data deal, we will do a table data deal,
+
+[11:24 - 11:26] we will do a table data deal, we will do a table data deal,
+
+[11:26 - 11:28] we will go with table data deal, we will do a table data deal,
+
+[11:28 - 11:30] we are getting into the model building,
+
+[11:30 - 11:32] our goal is how to accomplish model building mechanics,
+
+[11:32 - 11:34] our goal is how to do model building mechanics,
+
+[11:34 - 11:38] our goal is how to do model building mechanics,
+
+[11:38 - 11:40] our goal is how to do model building mechanics,
+
+[11:40 - 11:41] this model prints abroad in被 dodging slower
+
+[11:41 - 11:43] and this model prints abroad in被 dodging slower
+
+[11:43 - 11:45] and this model prints abroad in被 dodging slower
+
+[11:45 - 11:47] and this model triesolia video frame,
+
+[11:47 - 11:48] we have this model then das issued it in was created,
+
+[11:48 - 11:52] we have the model.
+
+[11:52 - 11:55] linear regression. So in the SK
+
+[11:55 - 11:57] collare linear model of
+
+[11:57 - 11:58] Dean, so it's a sub directory.
+
+[11:58 - 12:00] Here in the linear model,
+
+[12:00 - 12:02] collare, we have the linear regression.
+
+[12:02 - 12:05] So from SK dot linear model,
+
+[12:05 - 12:11] input linear regression.
+
+[12:14 - 12:16] So SK being the
+
+[12:16 - 12:17] R&N column, just
+
+[12:17 - 12:18] we want to re-run it.
+
+[12:19 - 12:22] I need to just we can run it once again.
+
+[12:23 - 12:26] And then also sorry.
+
+[12:32 - 12:37] Or else you can use model is equal to model dot SK dot
+
+[12:39 - 12:40] linear regression.
+
+[12:40 - 12:41] A beginning on the type on it,
+
+[12:41 - 12:43] we can just create an object.
+
+[12:43 - 12:44] I mean, I'll put it on the SK
+
+[12:44 - 12:45] of Dean R&N.
+
+[12:45 - 12:46] It's going to be input.
+
+[12:46 - 12:49] But in the SK collare linear model of
+
+[12:49 - 12:52] Dean, so it we have a sub directory on the sub directory.
+
+[12:52 - 12:55] Collare, we have a linear regression
+
+[12:55 - 12:56] operator model in the model.
+
+[12:56 - 12:59] We have to put this close open and close
+
+[12:59 - 13:00] pair on this.
+
+[13:00 - 13:01] We could have done it.
+
+[13:01 - 13:02] We have an object and the model
+
+[13:02 - 13:02] in the create.
+
+[13:02 - 13:05] So now we can run this line.
+
+[13:05 - 13:06] And we can run it.
+
+[13:06 - 13:07] And we can run it.
+
+[13:07 - 13:10] Now model dot fit.
+
+[13:10 - 13:11] X comma Y.
+
+[13:11 - 13:12] We could have done it.
+
+[13:12 - 13:13] And we can run it.
+
+[13:13 - 13:14] Now we can run it.
+
+[13:16 - 13:16] Now we can run it.
+
+[13:16 - 13:18] That's the linear regression.
+
+[13:18 - 13:19] It's a real object rate.
+
+[13:19 - 13:21] I think it's going to be so it's coming.
+
+[13:21 - 13:23] So this is going to be the linear regression.
+
+[13:23 - 13:25] X is equal to df of area square feet.
+
+[13:25 - 13:26] Y equal to price of likes.
+
+[13:26 - 13:27] I mean, right?
+
+[13:27 - 13:28] And X and Y column.
+
+[13:28 - 13:29] I created.
+
+[13:29 - 13:31] That's why.
+
+[13:31 - 13:33] In the X and Y.
+
+[13:33 - 13:35] I have the model in the 4 model.
+
+[13:35 - 13:36] And create.
+
+[13:36 - 13:38] Now in the model,
+
+[13:38 - 13:39] we can run it.
+
+[13:39 - 13:41] We can run it.
+
+[13:41 - 13:42] So model dot.
+
+[13:42 - 13:43] Right.
+
+[13:43 - 13:44] Now let's say I have come.
+
+[13:44 - 13:46] One thousand square feet.
+
+[13:46 - 13:48] One thousand two hundred square feet.
+
+[13:48 - 13:49] One meter of the rate.
+
+[13:49 - 13:50] I have come.
+
+[13:50 - 13:51] So you can know.
+
+[13:51 - 13:52] Model dot.
+
+[13:52 - 13:53] Open parenthesis.
+
+[13:53 - 13:54] Close parenthesis.
+
+[13:54 - 13:55] And then the rate.
+
+[13:55 - 13:58] So double diamond two dimensional.
+
+[13:58 - 13:59] We could.
+
+[13:59 - 14:00] We could.
+
+[14:00 - 14:02] We have a central plus center.
+
+[14:02 - 14:04] We.
+
+[14:04 - 14:06] Expected to be.
+
+[14:06 - 14:07] Okay.
+
+[14:07 - 14:11] Just once again.
+
+[14:11 - 14:13] If you look at it, we can give you two dimensional.
+
+[14:13 - 14:14] One dimensional.
+
+[14:14 - 14:15] And then we can run it.
+
+[14:15 - 14:17] But we can give two dimensional.
+
+[14:17 - 14:19] One thousand two hundred square feet.
+
+[14:19 - 14:20] One meter of the rate.
+
+[14:20 - 14:21] We will.
+
+[14:21 - 14:24] Get approximately around one crore and 44 lakhs.
+
+[14:24 - 14:25] Price is estimated.
+
+[14:25 - 14:26] I am.
+
+[14:26 - 14:27] I am.
+
+[14:27 - 14:28] E.
+
+[14:28 - 14:29] Let's say.
+
+[14:29 - 14:30] Yeah.
+
+[14:30 - 14:31] In the model line.
+
+[14:31 - 14:32] I have.
+
+[14:32 - 14:33] I have.
+
+[14:33 - 14:34] I have.
+
+[14:34 - 14:35] I have.
+
+[14:35 - 14:36] I have.
+
+[14:36 - 14:37] I have.
+
+[14:37 - 14:38] I have.
+
+[14:38 - 14:39] I have.
+
+[14:39 - 14:40] In the class.
+
+[14:40 - 14:41] In the.
+
+[14:41 - 14:42] Functions.
+
+[14:42 - 14:43] 11.
+
+[14:43 - 14:45] So in the feature names.
+
+[14:45 - 14:46] Fit intercept.
+
+[14:46 - 14:47] Intercept.
+
+[14:47 - 14:48] Let's say.
+
+[14:48 - 14:49] Now.
+
+[14:49 - 14:50] In the.
+
+[14:50 - 14:51] In the.
+
+[14:51 - 14:52] In the.
+
+[14:52 - 14:53] Model dot.
+
+[14:53 - 14:54] Coefficient.
+
+[14:54 - 14:55] It's going to show.
+
+[14:55 - 14:56] Model dot.
+
+[14:56 - 14:57] Coefficient.
+
+[14:57 - 14:58] Now.
+
+[14:58 - 14:59] Coefficient.
+
+[14:59 - 15:00] Now.
+
+[15:00 - 15:01] Coefficient.
+
+[15:01 - 15:02] Now.
+
+[15:02 - 15:03] Coefficient.
+
+[15:03 - 15:04] 0.1 ton.
+
+[15:04 - 15:05] That's.
+
+[15:05 - 15:06] Model dot.
+
+[15:06 - 15:09] Intercept.
+
+[15:09 - 15:11] This is.
+
+[15:11 - 15:13] Minus 1.244.
+
+[15:13 - 15:16] This is.
+
+[15:16 - 15:19] This is.
+
+[15:19 - 15:20] Slow.
+
+[15:20 - 15:21] And.
+
+[15:21 - 15:22] That's.
+
+[15:22 - 15:23] Okay.
+
+[15:23 - 15:25] Let's say.
+
+[15:25 - 15:27] Let's say.
+
+[15:27 - 15:28] Let's say.
+
+[15:28 - 15:30] It's a.
+
+[15:30 - 15:31] Ranges from.
+
+[15:31 - 15:33] on to.
+
+[15:33 - 15:34] Let's say.
+
+[15:34 - 15:35] How.
+
+[15:35 - 15:36] So.
+
+[15:36 - 15:38] 0.1.
+
+[15:38 - 15:39] I think.
+
+[15:39 - 15:41] 0.3.
+
+[15:41 - 15:43] So, we have to get the same number of steps.
+
+[15:43 - 15:45] We will get the same number of steps.
+
+[15:45 - 15:47] We will get the same number of steps.
+
+[15:47 - 15:49] We will get the same number of steps.
+
+[15:49 - 15:51] Now, we will see the next steps.
+
+[15:51 - 15:53] Let's see how many steps we have.
+
+[15:53 - 15:55] Let's see how many steps we have.
+
+[15:55 - 15:57] We will see how many steps we have.
+
+[15:57 - 15:59] We will see how many steps we have.
+
+[15:59 - 16:01] We will see how many steps we have.
+
+[16:01 - 16:03] We will see how many steps we have.
+
+[16:03 - 16:05] We will see how many steps we have.
+
+[16:05 - 16:07] We will see how many steps we have.
+
+[16:07 - 16:09] We will see how many steps we have.
+
+[16:09 - 16:12] Mx plus D also.
+
+[16:12 - 16:14] say you have Mx plus D also.
+
+[16:14 - 16:18] 噢 then we can enter many times to understand why all these steps are given in the master's framework ofモ пят  st
+
+[16:18 - 16:21] UN alpha double dc and IN villa.
+
+[16:21 - 16:24] Michael M stuffing Yuena
+
+[16:24 - 16:26] minus Tme
+
+[16:26 - 16:28] minus Tme
+
+[16:28 - 16:31] minus U
+
+[16:31 - 16:34] plus C
+
+[16:34 - 16:37] plus C
+
+[17:07 - 17:09] point is ok.
+
+[17:09 - 17:11] 1.1.
+
+[17:11 - 17:13] This is the color of our model.
+
+[17:13 - 17:17] Let's make it as red.
+
+[17:19 - 17:23] Now we have to try original data points.
+
+[17:23 - 17:27] We have to find the linear regression model
+
+[17:27 - 17:31] and we will build the line.
+
+[17:31 - 17:33] Now we will build the line as an extra.
+
+[17:33 - 17:37] Let's see how much we can build a 5,000.
+
+[17:37 - 17:39] We will build it as a 5,000.
+
+[17:39 - 17:41] Ok.
+
+[17:41 - 17:43] Now we have to build the line.
+
+[17:43 - 17:45] Ok.
+
+[17:45 - 17:49] Now we have to build the line.
+
+[17:49 - 17:53] Let's come out as an extra.
+
+[17:53 - 17:57] This time.
+
+[17:57 - 18:01] We will build it as a 4,000.
+
+[18:01 - 18:03] Ok.
+
+[18:03 - 18:05] 5,000.
+
+[18:05 - 18:09] And then let's run it once again.
+
+[18:09 - 18:11] Again.
+
+[18:11 - 18:13] What happened?
+
+[18:13 - 18:17] Here we can see.
+
+[18:17 - 18:19] The line is perfect.
+
+[18:19 - 18:23] We can see the point in the fitter.
+
+[18:23 - 18:29] Now we have to see how much we can build a price.
+
+[18:29 - 18:33] So let's build it as it has a 3,000 square feet.
+
+[18:33 - 18:35] There is another model of the price.
+
+[18:35 - 18:37] Let's see.
+
+[18:37 - 18:39] It is 3.62 crores.
+
+[18:39 - 18:41] The price is similar to the last time.
+
+[18:41 - 18:45] For this one, it is basic.
+
+[18:45 - 18:49] Next day, we will be seeing about the largest regression and steps.
+
+[18:49 - 18:51] Thank you for watching this video.
+
+[18:51 - 18:55] Don't forget to like, subscribe and comment.
+
+[18:55 - 18:57] Thank you.
+
+[18:59 - 19:01] you
+

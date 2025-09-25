@@ -1,0 +1,788 @@
+Source Type: YouTube Video
+Transcription Date: 2025-09-11 15:39:52
+==================================================
+
+[00:00 - 00:03] Hi and Hello guys!
+
+[00:03 - 00:09] In our channel, we are going to learn a basic language based on the language of the machine learning.
+
+[00:09 - 00:14] Now, this concept of the machine is like a movie story.
+
+[00:14 - 00:19] Now, we are going to a movie story completely completed.
+
+[00:19 - 00:22] We are going to understand the story completely.
+
+[00:22 - 00:25] Now, we are going to shoot the movie.
+
+[00:26 - 00:31] So, we are going to show the movie story, the concept of the machine learning.
+
+[00:31 - 00:35] And we are going to shoot the movie.
+
+[00:35 - 00:38] And we are going to shoot the movie.
+
+[00:38 - 00:41] And we are going to shoot the movie.
+
+[00:41 - 00:44] Without getting late, let's get into the video today.
+
+[00:44 - 00:47] I am Tharun and this is your channel Tech Explore.
+
+[00:47 - 00:58] So, this is basically the basic, we need to know the difference between the two.
+
+[00:58 - 01:01] So, what is the difference between the two?
+
+[01:01 - 01:05] Pandas, Nampai, SKL and Matplotlib.
+
+[01:05 - 01:09] So, if you ask me to cut it in this way, I don't know.
+
+[01:09 - 01:13] We will be doing some code and we will be doing some simple things.
+
+[01:13 - 01:15] We will be doing some simple things.
+
+[01:15 - 01:17] So, I am going to do that.
+
+[01:17 - 01:19] So, I am going to do that.
+
+[01:19 - 01:22] So, today you are watching this video.
+
+[01:22 - 01:25] You are going to build your first mission.
+
+[01:25 - 01:28] So, we will start coding.
+
+[01:28 - 01:34] So, before that, we have just started to know the difference between the two.
+
+[01:34 - 01:37] So, we will be doing Pandas sub-interests.
+
+[01:37 - 01:40] We will be using the table data as a deal.
+
+[01:40 - 01:43] Now, what is the table data we have been watching?
+
+[01:43 - 01:46] In this table data format, in the rows and columns,
+
+[01:46 - 01:48] we have the element table data on the leads.
+
+[01:48 - 01:50] Now, what is the table data?
+
+[01:50 - 01:53] Player, minutes, points, points, points, and points,
+
+[01:53 - 01:55] we have the full column.
+
+[01:55 - 02:00] In the names of the players, the observation, and attributes.
+
+[02:00 - 02:03] So, we have already seen the table data in the form of a table.
+
+[02:03 - 02:05] We have just already read the Till's instruction.
+
+[02:05 - 02:09] In this HTML description, we have already seen Akbar filters on the table and
+
+[02:09 - 02:11] then I have covered all the information here.
+
+[02:11 - 02:18] In all the instructions on the parenthesis, this will be the table data we have done on ceremony of the table.
+
+[02:18 - 02:21] We have already cleared the module.
+
+[02:21 - 02:25] We have placed an app on the document segurion page with our 0.9 user.
+
+[02:25 - 02:30] Now, every single list of reference pricing and libraries is filled here,
+
+[02:30 - 02:32] each ROM starts from 70 to 40imizi.
+
+[02:32 - 02:34] So, this is the main problem.
+
+[02:34 - 02:36] How to see the map plot clip of the interview?
+
+[02:36 - 02:40] I have created a model that is not very accurate.
+
+[02:40 - 02:42] This is the data in this structure.
+
+[02:42 - 02:44] We have to visualize the data.
+
+[02:44 - 02:46] This map plot will be used.
+
+[02:46 - 02:52] So, this is the basic idea of these four libraries.
+
+[02:52 - 02:56] Now, we are going to see the data that we have
+
+[02:56 - 02:58] seen in the interview.
+
+[02:58 - 03:00] We have a glance path.
+
+[03:02 - 03:06] So, here, if you see, we have two columns that is
+
+[03:06 - 03:10] area of square feet and then price and lakhs.
+
+[03:10 - 03:12] So, this is the data of being pathing Amina.
+
+[03:12 - 03:14] This is the data of being pathing Amina.
+
+[03:14 - 03:16] This is the data of being pathing Amina.
+
+[03:16 - 03:18] This is the square feet Amina.
+
+[03:18 - 03:20] This is the data of being pathing Amina.
+
+[03:20 - 03:22] This is the price of the Amina.
+
+[03:22 - 03:26] So, 197 lakhs is almost equal to 1.9s and crores.
+
+[03:26 - 03:28] Similarly, in 2019,
+
+[03:28 - 03:34] 84 square feet is around 2 crores and 60 lakhs.
+
+[03:34 - 03:38] So, in the area of square feet and then price and lakhs.
+
+[03:38 - 03:40] This is the data that we have done.
+
+[03:40 - 03:42] What is the data that we have done in this area?
+
+[03:42 - 03:44] In the future, I have done a lot of square feet.
+
+[03:44 - 03:48] I have done a lot of price and I have done a lot of extra.
+
+[03:48 - 03:50] I am going to build a model in this model.
+
+[03:50 - 03:52] Using linear regression algorithm.
+
+[03:52 - 03:54] So, could you start by using your hands?
+
+[03:54 - 03:56] Kokes!
+
+[03:56 - 03:58] Now, let's start preparing for the Выде вылигоприoration of playing games.
+
+[03:58 - 04:02] Here, I am going to prepare one science punkt.
+
+[04:02 - 04:09] じふ
+
+[04:11 - 04:13] Now, let's start preparing for the Summer Games Games.
+
+[04:13 - 04:15] We are going to start preparing for the Winter Games Games.
+
+[04:15 - 04:18] The winter games will not fall in expedition in hunting.
+
+[04:18 - 04:20] So, let's start preparing for the Winter Games Games.
+
+[04:20 - 04:22] We also go to the Winter Games Games.
+
+[04:22 - 04:24] So, we are running the model on the cloud.
+
+[04:24 - 04:28] We are training and we will be able to train them.
+
+[04:28 - 04:31] So, you can select any GP as well.
+
+[04:31 - 04:33] We are not able to select this.
+
+[04:33 - 04:35] We are going to be able to cost this.
+
+[04:35 - 04:39] But then the 4GPs are free for us now.
+
+[04:39 - 04:43] So, first of all, we need to import libraries.
+
+[04:43 - 04:46] What we need to do is import the first part.
+
+[04:46 - 04:48] Importing the libraries.
+
+[04:48 - 04:50] Import Pandas as P.D.
+
+[04:50 - 04:59] And then import SK learners as SKVN3.g.
+
+[04:59 - 05:01] And then import.
+
+[05:01 - 05:09] Let's say matplotlib.pyplot.plt
+
+[05:09 - 05:11] Okay, what?
+
+[05:11 - 05:13] We need to type this.
+
+[05:13 - 05:16] We need to select the cell and button.
+
+[05:16 - 05:18] If we click on it, it will be the same.
+
+[05:18 - 05:21] Okay, now we need to import libraries.
+
+[05:21 - 05:26] But, if we want to import the data, what we need to do is to import it.
+
+[05:26 - 05:30] If we want to import the first part, what we need to do is to import it.
+
+[05:30 - 05:33] In this way, the folder will be a button.
+
+[05:33 - 05:35] Click on it and upload it.
+
+[05:35 - 05:38] You will have a button here.
+
+[05:38 - 05:39] upload to session stories.
+
+[05:39 - 05:41] Click on it.
+
+[05:41 - 05:43] You can download it in the path.
+
+[05:43 - 05:47] Click on that file and open it.
+
+[05:47 - 05:51] You can store it in the data.
+
+[05:51 - 05:54] We need to download it in the data.
+
+[05:54 - 05:57] We need to download it.
+
+[05:57 - 06:00] Now, we need to import the data.
+
+[06:00 - 06:04] Next step is to import the data.
+
+[06:04 - 06:09] We need to read the format.
+
+[06:09 - 06:12] We need to read the data.
+
+[06:12 - 06:15] Of course, we need to delete the data.
+
+[06:15 - 06:18] We need to use the Pandas.
+
+[06:18 - 06:21] Let's see the data of the page.
+
+[06:21 - 06:23] Let's see the data of the page.
+
+[06:23 - 06:27] We need to import the page.
+
+[06:27 - 06:29] Now, we need to import the page.
+
+[06:29 - 06:31] This is the format.
+
+[06:31 - 06:33] Csv format.
+
+[06:33 - 06:35] So, pd.readcsv
+
+[06:40 - 06:42] p.readcsv
+
+[06:42 - 06:45] File name is house
+
+[06:45 - 06:48] prediction
+
+[06:48 - 06:50] data set
+
+[06:50 - 06:53] .csv
+
+[06:53 - 06:57] Now, we need to import the data.
+
+[06:57 - 06:59] We need to import the data.
+
+[06:59 - 07:01] We need to look at the text symbol.
+
+[07:01 - 07:03] Now, we need to read the DF of the page.
+
+[07:03 - 07:05] We need to read the data.
+
+[07:05 - 07:07] Now, we need to read the data.
+
+[07:07 - 07:09] We need to read the DF of the page.
+
+[07:09 - 07:11] We need to import the DF of the page.
+
+[07:11 - 07:13] We need to read the data.
+
+[07:13 - 07:15] We need to read the data.
+
+[07:15 - 07:17] We need to run the DF of the page.
+
+[07:17 - 07:19] We need to import the DF of the page.
+
+[07:19 - 07:21] We need to import the DF of the page.
+
+[07:21 - 07:24] We need to import the DF of the page.
+
+[07:24 - 07:26] We need to import the DF of the page.
+
+[07:26 - 07:28] We need to import the DF of the page.
+
+[07:28 - 07:31] We need to import the DF of the page.
+
+[07:31 - 07:33] We need to import the DF of the page.
+
+[07:33 - 07:35] We need to import the DF of the page.
+
+[07:35 - 07:37] We need to import the DF frame of the page.
+
+[07:37 - 07:39] We need to import the DF frame of the page.
+
+[07:39 - 07:41] We need to import the DF frame of the page.
+
+[07:41 - 07:43] Well, it's possible.
+
+[07:43 - 07:45] Some of the pages are called as called as call casually.
+
+[07:45 - 07:47] So, we need to import the DF frame of the page.
+
+[07:47 - 07:49] If we import this in the entire page.
+
+[07:49 - 07:51] Now, we need to import the DF frame of the page.
+
+[07:51 - 07:53] Now, we need to import the DF frame of the page.
+
+[07:53 - 07:55] Then.
+
+[07:55 - 07:57] Then, we need to add the DF frame of the page.
+
+[07:57 - 07:59] Now, we need to import the DF frame of the page.
+
+[07:59 - 08:01] Now, we need to import the DF frame of the page.
+
+[08:01 - 08:03] We need to import the DF frame of the page.
+
+[08:03 - 08:04] Now, we need to add the DF frame to the next page.
+
+[08:04 - 08:10] Now, I have to type the data frame in this column.
+
+[08:10 - 08:12] I have to type the fill kit area of square feet price.
+
+[08:12 - 08:15] Now, I have to type the area of square feet in this column.
+
+[08:15 - 08:17] What do I do?
+
+[08:17 - 08:19] The area,
+
+[08:19 - 08:21] So,
+
+[08:21 - 08:24] this area,
+
+[08:24 - 08:26] square feet.
+
+[08:26 - 08:28] Now, I have to type the column.
+
+[08:28 - 08:30] I have to type the column in this column.
+
+[08:31 - 08:33] Ok, I've to type any column below that any column.
+
+[08:33 - 08:36] I don't want to change the name column below this column.
+
+[08:38 - 08:41] This is pref.com probably the name column in this column.
+
+[08:41 - 08:43] PriceLaks
+
+[08:43 - 08:44] So, let me type the column below
+
+[08:46 - 08:48] PriceLaks
+
+[08:48 - 08:50] Let me repeat that column below.
+
+[08:50 - 08:51] That column,
+
+[08:51 - 08:53] and I am going to type the circle of the price and the setting.
+
+[08:53 - 08:56] I have to write out the input I am going to type from the bottom to the top.
+
+[08:56 - 08:58] Let me create a cycle.
+
+[08:58 - 09:03] So, we are going to get the price and we are going to get the price.
+
+[09:03 - 09:08] So, we are going to get the price and we are going to get the price and we are going to get the price.
+
+[09:08 - 09:15] So, input is x and output is y and we are declaring the area of square fin price and lakhs according to each other.
+
+[09:15 - 09:44] So, x is equal to df of area of square fin price and then y is equal to df of df of price in lakhs.
+
+[09:45 - 09:46] So, we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get the price and we are going to get
+
+[10:15 - 10:21] people back this whole, everything that Excel schön
+
+[10:21 - 10:30] teaching what and this is another 234 Ras bears .
+
+[10:30 - 10:39] This is another 320 or worse question you are talking about, you are talking about what you are talking about
+
+[10:39 - 10:41] So, we can import it in the MATLOTL.
+
+[10:41 - 10:43] Now, we can import it in the MATLOTL.
+
+[10:43 - 10:45] But, we can import it in the MATLOTL.
+
+[10:45 - 10:53] So, PLD.scata.x,y.
+
+[10:53 - 10:55] We can import it in the MATLOTL.
+
+[10:55 - 10:57] So, we can import it in the MATLOTL.
+
+[10:57 - 11:03] So, 1000 square feet is 1.125 rows.
+
+[11:03 - 11:05] We can import it in the MATLOTL.
+
+[11:05 - 11:07] So, we can import it in the MATLOTL.
+
+[11:07 - 11:09] So, we can import it in the MATLOTL.
+
+[11:09 - 11:12] Let's say we can have a function called color as equal to dot,
+
+[11:12 - 11:14] equal to R,
+
+[11:14 - 11:15] equal to L,
+
+[11:15 - 11:16] or K, or whatever,
+
+[11:16 - 11:17] black leather leather leather.
+
+[11:17 - 11:19] B,Q,B, blue leather leather.
+
+[11:19 - 11:21] And then Y,I think L.
+
+[11:21 - 11:24] So, what else can we import in the MATLOTL?
+
+[11:24 - 11:26] So, data, we need to look visually.
+
+[11:26 - 11:30] So, we can import it into the model building.
+
+[11:30 - 11:31] OK.
+
+[11:31 - 11:34] So, we can start building now.
+
+[11:34 - 11:40] We are going to take the scale and the scale and the scale and the linear regression model.
+
+[11:40 - 11:41] We are going to import the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale and the scale
+
+[12:10 - 12:26] which we return to the scale and the scale and the scale and the scale and the scale and the scale
+
+[12:26 - 12:40] Or else you can use model is equal to model dot SK dot linear regression.
+
+[12:40 - 12:43] A beginning you can type it and we can just create an object.
+
+[12:43 - 12:44] I mean I will do it again.
+
+[12:44 - 12:45] SK of the inner name.
+
+[12:45 - 12:46] We will input.
+
+[12:46 - 12:50] I mean, in this SK cooler linear model of the inside.
+
+[12:50 - 12:53] We have a sub directory on the sub directory cooler.
+
+[12:53 - 12:56] We have a linear regression up here in the model.
+
+[12:56 - 13:00] We have to put this close open and close parenthesis.
+
+[13:00 - 13:03] We will create an object and model.
+
+[13:03 - 13:06] Now we can do this line.
+
+[13:06 - 13:10] And do model dot fit.
+
+[13:10 - 13:11] x,y.
+
+[13:11 - 13:14] We will see what we will do now.
+
+[13:15 - 13:20] Now linear regression is a linear object.
+
+[13:20 - 13:22] So what is this?
+
+[13:22 - 13:23] We will do it again.
+
+[13:23 - 13:25] x is equal to df of area square feet.
+
+[13:25 - 13:26] y equal to price of legs.
+
+[13:26 - 13:27] I will do it again.
+
+[13:27 - 13:29] We will create an action.
+
+[13:29 - 13:33] Then we will create an action.
+
+[13:33 - 13:36] And we will create a model in the next one.
+
+[13:36 - 13:41] Now we will see how many of us will do this model.
+
+[13:41 - 13:42] So model dot fit.
+
+[13:42 - 13:44] Now let's see.
+
+[13:44 - 13:46] There is a thousand square feet.
+
+[13:46 - 13:48] A thousand two hundred square feet.
+
+[13:48 - 13:50] A speed order rate is equal to b.
+
+[13:50 - 13:51] We will see.
+
+[13:51 - 13:52] Model dot rate.
+
+[13:52 - 13:54] Open parenthesis, close parenthesis.
+
+[13:54 - 13:56] And then we will create a rate.
+
+[13:56 - 13:59] We will give double dimension to double dimension.
+
+[13:59 - 14:02] We will give it to the central plus center.
+
+[14:04 - 14:06] So we will expect it to be here.
+
+[14:06 - 14:07] Okay.
+
+[14:07 - 14:10] Just once again.
+
+[14:10 - 14:12] We will see.
+
+[14:12 - 14:14] We will give two dimension to one dimension.
+
+[14:14 - 14:17] And we will do two dimension to create.
+
+[14:17 - 14:19] A thousand two hundred square feet.
+
+[14:19 - 14:20] A speed order rate is equal to b.
+
+[14:20 - 14:24] We will get approximately around 1 crore and 44 legs.
+
+[14:24 - 14:26] Price is estimated.
+
+[14:26 - 14:28] We will see.
+
+[14:28 - 14:30] Now let's see.
+
+[14:30 - 14:32] In this model, there is a model.
+
+[14:32 - 14:33] There is a directory.
+
+[14:33 - 14:34] There is a function.
+
+[14:34 - 14:35] So we will see.
+
+[14:35 - 14:37] A directory of model.
+
+[14:37 - 14:38] What is the name of this model?
+
+[14:38 - 14:41] In this class, there is a symbol function.
+
+[14:41 - 14:43] We will see.
+
+[14:43 - 14:45] So in this, there are feature names.
+
+[14:45 - 14:47] Fit Intercept, Get parameters, Intercept.
+
+[14:47 - 14:49] We know that.
+
+[14:49 - 14:51] Let's say.
+
+[14:51 - 14:54] In this class, there is a model.
+
+[14:54 - 14:57] It is quite efficient.
+
+[14:57 - 14:59] Model.
+
+[14:59 - 15:02] Quite efficient.
+
+[15:02 - 15:05] Now, in this coefficient, there is 0.1 tone.
+
+[15:05 - 15:09] Similarly, model.
+
+[15:09 - 15:11] Intercept.
+
+[15:11 - 15:14] This is minus 1.244.
+
+[15:14 - 15:16] Now, in this model, there is an intercept.
+
+[15:16 - 15:22] This is the slow and the slow and the intercept.
+
+[15:22 - 15:24] Now, if you plot this line, you will see.
+
+[15:24 - 15:25] Let's see.
+
+[15:25 - 15:28] I am taking the data points for the XM3.
+
+[15:28 - 15:29] Let's see.
+
+[15:29 - 15:33] Ranges from 1 to...
+
+[15:33 - 15:34] Let's see.
+
+[15:34 - 15:36] How is the housing in our country?
+
+[15:36 - 15:37] Let's see.
+
+[15:37 - 15:38] 0.1.
+
+[15:38 - 15:39] I think.
+
+[15:39 - 15:41] 0.3.000 is there.
+
+[15:41 - 15:44] We have 0.3.000.
+
+[15:44 - 15:46] Let's see.
+
+[15:46 - 15:47] Let's see.
+
+[15:47 - 15:50] Let's see.
+
+[15:50 - 15:54] Now, the XM3 is the same.
+
+[15:54 - 15:55] Let's see.
+
+[15:55 - 15:59] Y equal to...
+
+[15:59 - 16:04] Y equal to...
+
+[16:04 - 16:07] Let's say, let's say, a list.
+
+[16:07 - 16:10] I into...
+
+[16:10 - 16:13] This is the MX plus C.
+
+[16:13 - 16:15] We have a model of coefficient.
+
+[16:15 - 16:16] Let's see.
+
+[16:16 - 16:18] I into...
+
+[16:18 - 16:20] I into...
+
+[16:20 - 16:22] I into...
+
+[16:22 - 16:24] I into...
+
+[16:24 - 16:26] I into...
+
+[16:26 - 16:27] I into...
+
+[16:27 - 16:29] I into...
+
+[16:29 - 16:30] I into...
+
+[16:30 - 16:31] I into...
+
+[16:31 - 16:32] I into...
+
+[16:32 - 16:34] I into...
+
+[16:34 - 16:35] I into...
+
+[16:35 - 16:36] I into...
+
+[16:36 - 16:37] I into...
+
+[16:37 - 16:38] I into...
+
+[16:38 - 16:39] I into...
+
+[16:39 - 16:40] I into...
+
+[16:40 - 16:41] I into...
+
+[16:41 - 16:42] I into...
+
+[16:42 - 16:43] I into...
+
+[16:43 - 16:44] I into...
+
+[16:44 - 16:46] X comma Y.
+
+[16:46 - 16:47] I into...
+
+[16:47 - 16:48] I into...
+
+[16:48 - 16:49] I into...
+
+[16:49 - 16:50] I into...
+
+[16:50 - 16:51] I into...
+
+[16:51 - 16:52] I into...
+
+[16:52 - 16:54] I into...
+
+[16:54 - 16:56] Next X Y number is...
+
+[16:56 - 16:57] This X Y number is now in this same question.
+
+[16:57 - 16:58] Now, let's see.
+
+[16:58 - 16:59] Let's see.
+
+[16:59 - 17:00] Let's see.
+
+[17:00 - 17:01] Now.
+
+[17:01 - 17:02] Let's see.
+
+[17:02 - 17:04] Let's see.
+
+[17:04 - 17:05] Let's see.
+
+[17:05 - 17:08] X 1 comma Y...
+
+[17:08 - 17:10] X 1 comma Y 1...
+
+[17:10 - 17:12] x1 comma Y 1...
+
+[17:12 - 17:13] This is the color of this comma.
+
+[17:13 - 17:19] color is equal to let's make it as red.
+
+[17:19 - 17:22] Now this is our original data points.
+
+[17:22 - 17:24] Let's try it.
+
+[17:24 - 17:27] We have created a linear regression model like
+
+[17:27 - 17:31] no vision, intersubtile and we will build a line.
+
+[17:31 - 17:33] Now the line is going to be an external document.
+
+[17:33 - 17:34] I will show you.
+
+[17:34 - 17:35] Let's see.
+
+[17:35 - 17:37] I will give you a 5000.
+
+[17:37 - 17:38] I will give you a 5000.
+
+[17:38 - 17:39] I will give you a 5000.
+
+[17:39 - 17:40] Okay.
+
+[17:40 - 17:42] Here is the document.
+
+[17:42 - 17:44] I will give you a 2000.
+
+[17:44 - 17:45] I am okay.
+
+[17:45 - 17:50] I will give you a top and PLD top block.
+
+[17:50 - 17:53] Let's come out.
+
+[17:53 - 17:57] It's 10 minutes.
+
+[17:57 - 18:01] I will give you a 4000.
+
+[18:01 - 18:03] Okay.
+
+[18:03 - 18:04] 5000.
+
+[18:04 - 18:11] And then let's run once again.
+
+[18:11 - 18:12] Okay.
+
+[18:12 - 18:17] What happened?
+
+[18:17 - 18:18] Here we can see.
+
+[18:18 - 18:20] The line is perfect.
+
+[18:20 - 18:23] We can see the points in the fitter.
+
+[18:23 - 18:26] Now I have a huge price.
+
+[18:26 - 18:28] I will give you a whole new one.
+
+[18:28 - 18:30] I will give you a square feet.
+
+[18:31 - 18:32] Let's see.
+
+[18:32 - 18:35] I have it as a 3,000 square feet.
+
+[18:35 - 18:36] Another model of pricey.
+
+[18:36 - 18:39] And I want to say it is 3.62 crores.
+
+[18:39 - 18:42] And the price range will be in the estimate.
+
+[18:42 - 18:46] So, then basically in the coding.
+
+[18:46 - 18:51] And the next day we will be seeing about the largest trick regression and steps.
+
+[18:51 - 18:53] Thank you for watching this video.
+
+[18:53 - 18:55] And don't forget to like, subscribe and comment.
+
+[18:55 - 18:56] Thank you.
+
+[19:00 - 19:01] Thank you.
+

@@ -1,0 +1,21 @@
+URL Analysis Summary
+URL: https://www.skyflow.com/post/building-secure-ai-agent-architecture-mcp?kw=model%20context%20protocol%20in%20ai&cpn=22595450547&kw=model%20context%20protocol%20in%20ai&cpn=22595450547&utm_agid=188867434550&creative=772768567814&extension_id=&device=c&utm_term=model%20context%20protocol%20in%20ai&utm_campaign=APAC:Search:HI:AILLMPrivacy:Desktop&utm_source=google&utm_medium=ppc&utm_content=MCP+Security&utm_content=MCP+Security&hsa_acc=6575335991&hsa_cam=22595450547&hsa_grp=188867434550&hsa_ad=772768567814&hsa_src=g&hsa_tgt=kwd-2430146565541&hsa_kw=model%20context%20protocol%20in%20ai&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=22595450547&gbraid=0AAAAABzDxWpYARMnDAbXiIsAgA7D6hhdv&gclid=CjwKCAjwlaTGBhANEiwAoRgXBR6mRhSJexmimuXftzivwa_GmjO8fvwEuUN4ahjphQXEiKZS9Oy2LBoCI3AQAvD_BwE
+Title: Building Secure AI Agent Architecture with Model Context Protocol - Skyflow
+Analysis Date: 2025-09-16 15:31:22
+==================================================
+
+Summary:
+Title: Building Secure AI Agent Architecture with Model Context Protocol - Skyflow
+
+Content Preview:
+This is some text inside of a div block.
+This is some text inside of a div block.
+Heading
+Building Secure AI Agent Architecture with Model Context Protocol
+Amruta Moktali
+Chief Product Officer
+Amruta Moktali
+Chief Product Officer
+August 1, 2025
+Every enterprise faces the same AI dilemma: agents need data access to be valuable, but every connection multiplies compliance risk. This fundamental tension is reshaping how engineering leaders are thinking about AI architecture, and Anthropic's
+Model Co...
