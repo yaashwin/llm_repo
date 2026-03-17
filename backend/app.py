@@ -2141,7 +2141,7 @@ try:
         llm_available = False
     
 except Exception as e:
-    print(f"Could not initialize Ollama: {e}")
+    print(f"Could not initialize Ollama: {e}") 
     llm_available = False
 
 # Suppress warnings
