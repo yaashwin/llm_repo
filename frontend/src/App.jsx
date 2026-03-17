@@ -1320,25 +1320,24 @@ function App() {
               )}
             </div>
             
+            {useContext && (transcriptionResult || meetingSummaryResult) && (
+              <div className="context-info">
+                <p>🎯 Context-aware mode: The AI has access to your meeting transcription and summary</p>
+                <p>Try asking questions like:</p>
+                <ul>
+                  <li>"What were the main decisions made in the meeting?"</li>
+                  <li>"Who is responsible for the budget review?"</li>
+                  <li>"What are the risks mentioned in the discussion?"</li>
+                  <li>"Can you predict potential challenges based on this meeting?"</li>
+                  <li>"Create a follow-up email based on the action items"</li>
+                  <li>"What timeline was discussed for the project?"</li>
+                  <li>"Summarize the budget concerns raised"</li>
+                  <li>"Generate a status report based on this meeting"</li>
+                </ul>
+              </div>
+            )}
             
-            <div className="over-all">
             <div className="chat-history">
-                {useContext && (transcriptionResult || meetingSummaryResult) && (
-                  <div className="context-info">
-                    <p>🎯 Context-aware mode: The AI has access to your meeting transcription and summary</p>
-                    <p>Try asking questions like:</p>
-                    <ul>
-                      <li>"What were the main decisions made in the meeting?"</li>
-                      <li>"Who is responsible for the budget review?"</li>
-                      <li>"What are the risks mentioned in the discussion?"</li>
-                      <li>"Can you predict potential challenges based on this meeting?"</li>
-                      <li>"Create a follow-up email based on the action items"</li>
-                      <li>"What timeline was discussed for the project?"</li>
-                      <li>"Summarize the budget concerns raised"</li>
-                      <li>"Generate a status report based on this meeting"</li>
-                    </ul>
-                  </div>
-                )}
               {chatHistory.map((msg, index) => (
                 <div key={index} className={`message ${msg.role}`}>
                   <strong>{msg.role === 'user' ? 'You' : `AI (${msg.provider || 'Local'})`}:</strong> 
@@ -1348,7 +1347,7 @@ function App() {
               {loading && <div className="message assistant">Thinking...</div>}
               <div ref={chatEndRef} />
             </div>
-            </div>
+            
             <div className="chat-input">
               <input
                 type="text"

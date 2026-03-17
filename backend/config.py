@@ -20,7 +20,7 @@ class Config:
     # Model Settings
     LLM_MODELS = {
         "gemini": {
-            "default": "gemini-pro",
+            "default": "gemini-1.5-flash",
             "vision": "gemini-1.5-pro",
             "max_tokens": 30000
         },
@@ -42,18 +42,12 @@ class Config:
     }
     
     # Meeting Summary Settings
-    # Meeting Summary Settings
     MEETING_SUMMARY_SETTINGS = {
         "max_transcript_length": 50000,
         "default_temperature": 0.3,
         "summary_temperature": 0.3,
         "insights_temperature": 0.5,
-        "actions_temperature": 0.2,
-        # ✅ ADD THESE:
-        "summary_max_tokens": 8000,
-        "insights_max_tokens": 6000,
-        "actions_max_tokens": 6000,
-        "email_max_tokens": 4000,
+        "actions_temperature": 0.2
     }
     
     @classmethod

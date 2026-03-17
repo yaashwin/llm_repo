@@ -1724,7 +1724,7 @@ async def get_llm_providers():
                 "gemini": {
                     "name": "Google Gemini",
                     "requires": "GEMINI_API_KEY",
-                    "models": ["gemini-pro", "gemini-1.5-pro"]
+                    "models": ["gemini-1.5-flash", "gemini-1.5-pro"]
                 },
                 "openai": {
                     "name": "OpenAI GPT",
