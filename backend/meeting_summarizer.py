@@ -8,7 +8,8 @@ import google.generativeai as genai
 from openai import OpenAI
 import anthropic
 import requests
-
+from config import Config
+from meeting_templates import MeetingTemplates
 # Abstract base class for LLM providers
 class LLMProvider(ABC):
     """Abstract base class for LLM providers"""
@@ -25,41 +26,66 @@ class LLMProvider(ABC):
 
 class GeminiProvider(LLMProvider):
     """Google Gemini API provider"""
-    
-    def __init__(self, api_key: Optional[str] = None):
+
+    def __init__(self, api_key: Optional[str] = None, model: str = "gemini-2.5-flash"):
         # Always use environment variable, ignore passed api_key from frontend
         self.api_key = os.getenv("GEMINI_API_KEY")
+        self.model_name = model
         if self.api_key:
             genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel('gemini-1.5-flash')
-    
-    def generate(self, prompt: str, max_tokens: int = 4000, temperature: float = 0.7) -> str:
+            self.model = genai.GenerativeModel(self.model_name)
+
+    def generate(self, prompt: str, max_tokens: int = 1000, temperature: float = 0.7) -> str:
         try:
             response = self.model.generate_content(
                 prompt,
-                generation_config=genai.types.GenerationConfig(
+                generation_config=genai.GenerationConfig(
                     max_output_tokens=max_tokens,
                     temperature=temperature,
                 )
             )
+            
+            # --- START of the FIX for finish_reason ---
+            if response.candidates and response.candidates[0].finish_reason:
+                reason = response.candidates[0].finish_reason.name
+                
+                if reason != "STOP":
+                    error_msg = f"Gemini generation stopped. Reason: {reason}."
+                    
+                    if reason == "MAX_TOKENS": # Finish Reason 2
+                        error_msg += f" The response hit the max_output_tokens limit ({max_tokens}). Try increasing max_tokens."
+                    elif reason == "SAFETY": # Finish Reason 1
+                        safety_ratings = response.candidates[0].safety_ratings
+                        error_msg += f" Content was blocked by safety filters. Details: {safety_ratings}"
+                    
+                    raise Exception(error_msg)
+            
+            # Access response.text only after verifying that a valid text part was generated
             return response.text
+            # --- END of the FIX ---
+            
         except Exception as e:
+            # Re-raise the exception with a clear wrapper
             raise Exception(f"Gemini generation failed: {str(e)}")
-    
+
     def is_available(self) -> bool:
         return bool(self.api_key)
 
 class OpenAIProvider(LLMProvider):
     """OpenAI API provider"""
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4"):
+    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-3.5-turbo"):  # Use gpt-3.5-turbo
         # Always use environment variable, ignore passed api_key from frontend
         self.api_key = os.getenv("OPENAI_API_KEY")
         self.model = model
+        self.client = None
         if self.api_key:
             self.client = OpenAI(api_key=self.api_key)
     
     def generate(self, prompt: str, max_tokens: int = 4000, temperature: float = 0.7) -> str:
+        if not self.client:
+            raise Exception("OpenAI client not initialized. Check your API key.")
+            
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
@@ -72,7 +98,7 @@ class OpenAIProvider(LLMProvider):
             raise Exception(f"OpenAI generation failed: {str(e)}")
     
     def is_available(self) -> bool:
-        return bool(self.api_key)
+        return bool(self.api_key and self.client)
 
 class ClaudeProvider(LLMProvider):
     """Anthropic Claude API provider"""
@@ -294,17 +320,17 @@ class MeetingSummarizer:
         try:
             # Generate summary using current LLM provider
             print(f"Generating summary with {self.llm_manager.current_provider_name}...")
-            summary = self.llm_manager.generate(prompt, temperature=0.3, max_tokens=2000)
+            summary = self.llm_manager.generate(prompt, temperature=0.3, max_tokens=6000)
             
             # Generate additional insights
             insights_prompt = self._create_insights_prompt(cleaned_content)
             print("Generating insights...")
-            insights = self.llm_manager.generate(insights_prompt, temperature=0.5, max_tokens=1500)
+            insights = self.llm_manager.generate(insights_prompt, temperature=0.5, max_tokens=4000)
             
             # Extract action items
             actions_prompt = self._create_actions_prompt(cleaned_content)
             print("Extracting action items...")
-            action_items = self.llm_manager.generate(actions_prompt, temperature=0.3, max_tokens=1000)
+            action_items = self.llm_manager.generate(actions_prompt, temperature=0.3, max_tokens=4000)
             
             return {
                 "status": "success",
@@ -406,100 +432,103 @@ class EnhancedMeetingSummarizer(MeetingSummarizer):
         super().__init__(llm_provider)
         self.templates = MeetingTemplates()
     
-    def generate_meeting_summary(
-        self,
-        main_transcript: str,
-        attachments: List[Dict[str, Any]] = None,
-        meeting_context: Optional[str] = None,
-        custom_instructions: Optional[str] = None,
-        meeting_type: str = "general"
-    ) -> Dict[str, Any]:
-        """Generate meeting summary with template support"""
-        
-        # Get appropriate template
-        template = self.templates.get_template(meeting_type)
-        
-        # Merge all content
-        if attachments:
-            merged_content = self.merge_transcripts(main_transcript, attachments)
-        else:
-            merged_content = main_transcript
-        
-        # Clean the merged content
-        cleaned_content = self.clean_transcript(merged_content)
-        
-        # Remove chitchat sections
-        chitchat = self.identify_chitchat_sections(cleaned_content)
-        if chitchat:
-            print(f"Removed {len(chitchat)} chitchat sections")
-        
-        try:
-            # Generate summary using template
-            summary_prompt = f"""{template['summary_prompt']}
+def generate_meeting_summary(
+    self,
+    main_transcript: str,
+    attachments: List[Dict[str, Any]] = None,
+    meeting_context: Optional[str] = None,
+    custom_instructions: Optional[str] = None,
+    meeting_type: str = "general"
+) -> Dict[str, Any]:
+    """Generate meeting summary with template support"""
+    
+    # Get appropriate template
+    template = self.templates.get_template(meeting_type)
+    
+    # Merge all content
+    if attachments:
+        merged_content = self.merge_transcripts(main_transcript, attachments)
+    else:
+        merged_content = main_transcript
+    
+    # Clean the merged content
+    cleaned_content = self.clean_transcript(merged_content)
+    
+    # Remove chitchat sections
+    chitchat = self.identify_chitchat_sections(cleaned_content)
+    if chitchat:
+        print(f"Removed {len(chitchat)} chitchat sections")
+    
+    try:
+        # ✅ Generate summary using template WITH max_tokens
+        summary_prompt = f"""{template['summary_prompt']}
 
 {f'Meeting Context: {meeting_context}' if meeting_context else ''}
 {f'Special Instructions: {custom_instructions}' if custom_instructions else ''}
 
 TRANSCRIPT:
 {cleaned_content[:15000]}"""
-            
-            summary = self.llm_manager.generate(
-                summary_prompt, 
-                temperature=Config.MEETING_SUMMARY_SETTINGS["summary_temperature"]
-            )
-            
-            # Generate insights
-            insights_prompt = f"""{template['insights_prompt']}
+        
+        summary = self.llm_manager.generate(
+            summary_prompt, 
+            temperature=Config.MEETING_SUMMARY_SETTINGS["summary_temperature"],
+            max_tokens=Config.MEETING_SUMMARY_SETTINGS.get("summary_max_tokens", 8000)  # ✅ ADDED
+        )
+        
+        # ✅ Generate insights WITH max_tokens
+        insights_prompt = f"""{template['insights_prompt']}
 
 TRANSCRIPT:
 {cleaned_content[:10000]}"""
-            
-            insights = self.llm_manager.generate(
-                insights_prompt,
-                temperature=Config.MEETING_SUMMARY_SETTINGS["insights_temperature"]
-            )
-            
-            # Extract action items
-            actions_prompt = f"""{template['actions_prompt']}
+        
+        insights = self.llm_manager.generate(
+            insights_prompt,
+            temperature=Config.MEETING_SUMMARY_SETTINGS["insights_temperature"],
+            max_tokens=Config.MEETING_SUMMARY_SETTINGS.get("insights_max_tokens", 6000)  # ✅ ADDED
+        )
+        
+        # ✅ Extract action items WITH max_tokens
+        actions_prompt = f"""{template['actions_prompt']}
 
 TRANSCRIPT:
 {cleaned_content[:10000]}"""
-            
-            action_items = self.llm_manager.generate(
-                actions_prompt,
-                temperature=Config.MEETING_SUMMARY_SETTINGS["actions_temperature"]
-            )
-            
-            # Generate email summary if requested
-            email_summary = None
-            if custom_instructions and "email" in custom_instructions.lower():
-                email_summary = self._generate_email_summary(summary, action_items)
-            
-            return {
-                "status": "success",
-                "provider": self.llm_manager.current_provider_name,
-                "meeting_type": meeting_type,
-                "summary": summary,
-                "insights": insights,
-                "action_items": action_items,
-                "email_summary": email_summary,
-                "cleaned_transcript": cleaned_content,
-                "original_length": len(merged_content),
-                "cleaned_length": len(cleaned_content),
-                "chitchat_removed": len(chitchat),
-                "timestamp": datetime.now().isoformat()
-            }
-            
-        except Exception as e:
-            return {
-                "status": "error",
-                "error": str(e),
-                "provider": self.llm_manager.current_provider_name
-            }
+        
+        action_items = self.llm_manager.generate(
+            actions_prompt,
+            temperature=Config.MEETING_SUMMARY_SETTINGS["actions_temperature"],
+            max_tokens=Config.MEETING_SUMMARY_SETTINGS.get("actions_max_tokens", 6000)  # ✅ ADDED
+        )
+        
+        # Generate email summary if requested
+        email_summary = None
+        if custom_instructions and "email" in custom_instructions.lower():
+            email_summary = self._generate_email_summary(summary, action_items)
+        
+        return {
+            "status": "success",
+            "provider": self.llm_manager.current_provider_name,
+            "meeting_type": meeting_type,
+            "summary": summary,
+            "insights": insights,
+            "action_items": action_items,
+            "email_summary": email_summary,
+            "cleaned_transcript": cleaned_content,
+            "original_length": len(merged_content),
+            "cleaned_length": len(cleaned_content),
+            "chitchat_removed": len(chitchat),
+            "timestamp": datetime.now().isoformat()
+        }
+        
+    except Exception as e:
+        return {
+            "status": "error",
+            "error": str(e),
+            "provider": self.llm_manager.current_provider_name
+        }
     
-    def _generate_email_summary(self, summary: str, action_items: str) -> str:
-        """Generate email-ready summary"""
-        email_prompt = f"""Create a professional email summary of this meeting:
+def _generate_email_summary(self, summary: str, action_items: str) -> str:
+    """Generate email-ready summary"""
+    email_prompt = f"""Create a professional email summary of this meeting:
 
 SUMMARY:
 {summary}
@@ -517,4 +546,4 @@ Format as a professional email with:
 
 Keep it concise and email-appropriate."""
         
-        return self.llm_manager.generate(email_prompt, temperature=0.3)
+    return self.llm_manager.generate(email_prompt, temperature=0.3)
